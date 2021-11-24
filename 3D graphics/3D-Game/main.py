@@ -1,10 +1,8 @@
 import sys
-from math import cos, sin
 
 import pygame as pg
 
 from Player import Player
-from map import world_map
 from ray_casting import ray_casting
 from settings import *
 
@@ -20,8 +18,6 @@ class App(object):
 
     def draw(self) -> None:
         self.screen.fill(BLACK)
-
-        # w
 
         ray_casting(self.screen, self.player.pos, self.player.angle)
 
